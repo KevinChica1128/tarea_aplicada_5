@@ -48,8 +48,84 @@ puntosati<-hii>h
 
 
 #Punto 4: Modelo por el origen:
-modelo2<-lm(PM25~PM10-1)
+modelo2<-lm(PM25~0+PM10)
 summary(modelo2)
 x11()
 plot(PM10,PM25,xlim = c(0,200),ylab = "PM2.5",main = "Modelo ajustado con intercepto 0")
 abline(modelo2,col="Red")
+
+#Punto 5:
+#Pruebas de diagnostico modelo2 (por el origen):
+summary(influence.measures(modelo2))
+residuos2<-residuals(modelo2)
+restudent2<-rstudent(modelo2)
+rstandard2<-rstandard(modelo2)
+yajustados2<-fitted(modelo2)
+library("car")
+influence.plot(modelo2)
+
+#Punto 7:
+#Validación de supuestos:
+#Linealidad:
+x11()
+par(mfrow=c(1,2))
+plot(yajustados2,rstandard2,xlab="Y ajustados",ylab = "Residuales",main = "Residuos vs Valores ajustados")
+abline(h=3,add=TRUE,lty=2,col="Red")
+abline(h=-3,add=TRUE,lty=2,col="Red")
+plot(PM10,PM25,ylab = "PM2.5",xlim=c(0,200),main = "Modelo ajustado con intercepto 0")
+abline(modelo2,col="Red")
+#Normalidad:
+x11()
+par(mfrow=c(1,2))
+hist(rstandard2,xlab = "Residuos Estandarizados",ylab = "Frecuencia",main = "Histograma de los residuales")
+qqnorm(residuos2,xlab = "Cuantiles Teóricos",ylab = "Cuantiles muestrales")
+qqline(residuos2, col = "red")
+shapiro.test(residuos2)
+
+#Homocedasticidad:
+library('het.test')
+library('vars')
+require('car')
+library('Rcmdr')
+gqtest(modelo2)
+
+
+gqtest(modelo2)
+bartlett.test(PM25 ~ PM10)
+fligner.test(PM25 ~ PM10)
+bptest(modelo2)
+#Independencia:
+residuosx<-c()
+for (i in 1:length(residuos2)) {
+  residuosx[i]<-residuos2[i-1]
+}
+residuosx[1]=0
+x11()
+par(mfrow=c(1,2))
+acf(residuos2,ci=0.95,lag.max=200,type = c("correlation"),main="Correlograma de los residuos",ylab="Autocorrelación",xlab="Retardo")
+plot(residuosx,residuos2,xlab="Residuales(t-1)",ylab="Residuales(t)",main="Residuales(t) vs Residuales(t-1)")
+abline(h=0,lty=2)
+
+#Prueba de rachas:
+library("tseries")
+residualesfactor<-c()
+for (i in 1:length(residuos2)) {
+  if (residuos2[i]>0){
+    residualesfactor[i]=1
+  }
+  if (residuos2[i]<0){
+    residualesfactor[i]=-1
+  }
+}
+runs.test(factor(residualesfactor))
+
+
+AIC(modelo1)
+AIC(modelo2)
+BIC(modelo1)
+BIC(modelo2)
+
+#Prueba de durbin watson:
+library("lmtest")
+dwtest(modelo2,alternative = c("two.sided"))
+
