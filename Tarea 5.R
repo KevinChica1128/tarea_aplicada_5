@@ -88,12 +88,8 @@ library('vars')
 require('car')
 library('Rcmdr')
 gqtest(modelo2)
+fligner.test(modelo2)
 
-
-gqtest(modelo2)
-bartlett.test(PM25 ~ PM10)
-fligner.test(PM25 ~ PM10)
-bptest(modelo2)
 #Independencia:
 residuosx<-c()
 for (i in 1:length(residuos2)) {
@@ -129,3 +125,9 @@ BIC(modelo2)
 library("lmtest")
 dwtest(modelo2,alternative = c("two.sided"))
 
+#Comparación modelos:
+x11()
+plot(PM10,PM25,ylab = "PM2.5",xlim=c(0,200),main = "Gráfica de dispersión con rectas de regresión")
+abline(modelo1,col="Red")
+abline(modelo2,col="Green")
+legend("topleft",legend = c("Modelo1","Modelo2"),lty=c(1,1),col=c("Red","Green"))

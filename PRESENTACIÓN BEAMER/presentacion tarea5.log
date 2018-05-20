@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  16 MAY 2018 17:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  19 MAY 2018 16:49
 entering extended mode
 **"./presentacion tarea5.tex"
 ("presentacion tarea5.tex"
@@ -1138,6 +1138,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ("presentacion tarea5.aux"
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
 )
 \openout1 = `"presentacion tarea5.aux"'.
 
@@ -1331,7 +1347,204 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 [1
 
 {C:/Users/KEVINSTEVEN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2
+LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 34.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 34.
+
+(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex\latex\sansmathaccent\ot1ma
+thkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+) [2
+
+] [3
+
+] [4
+
+] [5
+
+] [6
+
+] [7
+
+] [8
+
+]
+<imagenes/ma.pdf, id=78, 1027.84pt x 545.03625pt>
+File: imagenes/ma.pdf Graphic file (type pdf)
+ <use imagenes/ma.pdf>
+Package pdftex.def Info: imagenes/ma.pdf used on input line 100.
+(pdftex.def)             Requested size: 400.85599pt x 212.56328pt.
+
+Overfull \hbox (83.66014pt too wide) in paragraph at lines 100--100
+ [] 
+ []
+
+
+Overfull \vbox (74.71063pt too high) detected at line 100
+ []
+
+[9
+
+ <./imagenes/ma.pdf>] <imagenes/rv.pdf, id=94, 1027.84pt x 545.03625pt>
+File: imagenes/rv.pdf Graphic file (type pdf)
+
+<use imagenes/rv.pdf>
+Package pdftex.def Info: imagenes/rv.pdf used on input line 112.
+(pdftex.def)             Requested size: 400.85599pt x 212.56328pt.
+
+Overfull \hbox (83.66014pt too wide) in paragraph at lines 112--112
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.112 \end{frame}
+                 
+Overfull \vbox (62.01062pt too high) detected at line 112
+ []
+
+[10
+
+ <./imagenes/rv.pdf>] <imagenes/qq.pdf, id=106, 1027.84pt x 545.03625pt>
+File: imagenes/qq.pdf Graphic file (type pdf)
+
+<use imagenes/qq.pdf>
+Package pdftex.def Info: imagenes/qq.pdf used on input line 124.
+(pdftex.def)             Requested size: 359.74939pt x 190.76555pt.
+
+Overfull \hbox (42.55354pt too wide) in paragraph at lines 124--124
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 \end{frame}
+                 
+Overfull \vbox (40.21289pt too high) detected at line 124
+ []
+
+[11
+
+ <./imagenes/qq.pdf>] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+]
+Overfull \hbox (6.42776pt too wide) in paragraph at lines 198--198
+ [] 
+ []
+
+[17
+
+] [18
+
+] [19
+
+] <imagenes/comp.pdf, id=175, 1027.84pt x 545.03625pt>
+File: imagenes/comp.pdf Graphic file (type pdf)
+
+<use imagenes/comp.pdf>
+Package pdftex.def Info: imagenes/comp.pdf used on input line 238.
+(pdftex.def)             Requested size: 359.74939pt x 190.76555pt.
+
+Overfull \hbox (19.05379pt too wide) in paragraph at lines 238--238
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.238 \end{frame}
+                 
+Overfull \vbox (31.21289pt too high) detected at line 238
+ []
+
+[20
+
+ <./imagenes/comp.pdf>]
+Overfull \hbox (6.4322pt too wide) in paragraph at lines 254--254
+[] 
+ []
+
+[21
+
+] [22
+
+]
+Overfull \hbox (6.42697pt too wide) in paragraph at lines 281--281
+ [] 
+ []
+
+[23
+
+] <imagenes/coresp.pdf, id=205, 1027.84pt x 545.03625pt>
+File: imagenes/coresp.pdf Graphic file (type pdf)
+
+<use imagenes/coresp.pdf>
+Package pdftex.def Info: imagenes/coresp.pdf used on input line 293.
+(pdftex.def)             Requested size: 318.6271pt x 168.95949pt.
+
+Overfull \hbox (1.43126pt too wide) in paragraph at lines 293--293
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.293 \end{frame}
+                 
+Overfull \vbox (47.40683pt too high) detected at line 293
+ []
+
+[24
+
+ <./imagenes/coresp.pdf>] [25
+
+]
+<imagenes/norm.pdf, id=224, 1027.84pt x 545.03625pt>
+File: imagenes/norm.pdf Graphic file (type pdf)
+ <use imagenes/norm.pdf>
+Package pdftex.def Info: imagenes/norm.pdf used on input line 309.
+(pdftex.def)             Requested size: 380.29485pt x 201.66025pt.
+
+Overfull \hbox (39.59924pt too wide) in paragraph at lines 309--309
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.309 \end{frame}
+                 
+Overfull \vbox (42.10759pt too high) detected at line 309
+ []
+
+[26
+
+ <./imagenes/norm.pdf>] [27
 
 ]
 \tf@nav=\write6
@@ -1343,14 +1556,14 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 \tf@snm=\write8
 \openout8 = `"presentacion tarea5.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
  ("presentacion tarea5.aux"
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `"presentacion tarea5".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1358,22 +1571,37 @@ Package rerunfilecheck Info: File `"presentacion tarea5".out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
  ) 
 Here is how much of TeX's memory you used:
- 17735 strings out of 493334
- 337676 string characters out of 3139234
- 417661 words of memory out of 3000000
- 20852 multiletter control sequences out of 15000+200000
- 5451 words of font info for 20 fonts, out of 3000000 for 9000
+ 18039 strings out of 493334
+ 343405 string characters out of 3139234
+ 420708 words of memory out of 3000000
+ 21073 multiletter control sequences out of 15000+200000
+ 12638 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,17n,55p,426b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on "presentacion tarea5.pdf" (2 pages, 41355 bytes).
+ 56i,17n,55p,907b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "presentacion tarea5.pdf" (27 pages, 244880 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 305 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
