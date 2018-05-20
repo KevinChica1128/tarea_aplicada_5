@@ -93,7 +93,7 @@ $R^2$ & $R^2_{Ajustado}$ & $\hat{\sigma}$ & Estadistico F & Valor p \\
 \item[a)] \textbf{Gráfica de dispersión:}
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.39]{imagenes/ma.pdf}
+  \includegraphics[scale=0.32]{imagenes/ma.pdf}
   \caption{Gráfico de dispersión con recta ajustada y valores candidatos a atipicos}\label{figura1}
 \end{figure}
 \end{itemize}
@@ -105,7 +105,7 @@ $R^2$ & $R^2_{Ajustado}$ & $\hat{\sigma}$ & Estadistico F & Valor p \\
 \item[b)] \textbf{Gráfica de $\hat{d}$ vs $\hat{y}$:}
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.39]{imagenes/rv.pdf}
+  \includegraphics[scale=0.32]{imagenes/rv.pdf}
   \caption{Gráfico de residuales estandarizados vs los valores ajustados}\label{figura1}
 \end{figure}
 \end{itemize}
@@ -117,7 +117,7 @@ $R^2$ & $R^2_{Ajustado}$ & $\hat{\sigma}$ & Estadistico F & Valor p \\
 \item[c)] \textbf{q-qplot de los residuales :}
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.35]{imagenes/qq.pdf}
+  \includegraphics[scale=0.32]{imagenes/qq.pdf}
   \caption{q-qplot de los residuales}\label{figura1}
 \end{figure}
 \end{itemize}
@@ -232,7 +232,7 @@ $R^2$ & $R^2_{Ajustado}$ & $\hat{\sigma}$ & Estadistico F & Valor p \\
 \frametitle{Comparación de modelos}
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.35]{imagenes/comp.pdf}
+  \includegraphics[scale=0.34]{imagenes/comp.pdf}
   \caption{Gráfica comparativa de rectas de regresión}\label{figura1}
 \end{figure}
 \end{frame}
@@ -303,7 +303,7 @@ Observación & HAT & $\hat{r_{i}} $ &$D_{i}$ & $DFFITS_{i}$ & $DFBETAS_{1,j}$ & 
 \frametitle{Validación de supuestos, modelo 2}
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.37]{imagenes/norm.pdf}
+  \includegraphics[scale=0.34]{imagenes/norm.pdf}
   \caption{Gráficos para evaluar la normalidad en los errores}\label{figura1}
 \end{figure}
 \end{frame}
@@ -315,5 +315,23 @@ Observación & HAT & $\hat{r_{i}} $ &$D_{i}$ & $DFFITS_{i}$ & $DFBETAS_{1,j}$ & 
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{Validación de supuestos, modelo 2}
+\begin{itemize}
+\item[d)] Independencia en los errores: Sabemos que no se puede probar a ciencia cierta la independencia en los errores, sin embargo, para tener cierta idea sobre este supuesto, analizamos los residuales gráficamente (correlograma) y le aplicamos la prueba de rachas para darnos cuenta si estos son totalmente aleatorios o si tienen cierta correlación o dependencia. La prueba de rachas nos arrojo un estadístico aproximado a la normal estándar de -2.3369 y un p valor de 0.01945, entonces, para un nivel de significancia de 0.05, se rechaza $H_{0}$ y se concluye que los residuos no son totalmente aleatorios, es decir, hay cierta correlación entre ellos.
+\end{itemize}
+\end{frame}
 
+\begin{frame}
+\frametitle{Validación de supuestos, modelo 2}
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.34]{imagenes/corr.pdf}
+  \caption{Gráficos para evaluar la independencia en los errores}\label{figura1}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Regresión Robusta}
+\end{frame}
 \end{document}

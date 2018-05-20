@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  19 MAY 2018 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  20 MAY 2018 14:27
 entering extended mode
 **"./presentacion tarea5.tex"
 ("presentacion tarea5.tex"
@@ -1154,6 +1154,9 @@ LaTeX Warning: Label `figura1' multiply defined.
 
 LaTeX Warning: Label `figura1' multiply defined.
 
+
+LaTeX Warning: Label `figura1' multiply defined.
+
 )
 \openout1 = `"presentacion tarea5.aux"'.
 
@@ -1383,14 +1386,14 @@ thkerncmss.
 File: imagenes/ma.pdf Graphic file (type pdf)
  <use imagenes/ma.pdf>
 Package pdftex.def Info: imagenes/ma.pdf used on input line 100.
-(pdftex.def)             Requested size: 400.85599pt x 212.56328pt.
+(pdftex.def)             Requested size: 328.91551pt x 174.41516pt.
 
-Overfull \hbox (83.66014pt too wide) in paragraph at lines 100--100
+Overfull \hbox (11.71967pt too wide) in paragraph at lines 100--100
  [] 
  []
 
 
-Overfull \vbox (74.71063pt too high) detected at line 100
+Overfull \vbox (36.56252pt too high) detected at line 100
  []
 
 [9
@@ -1400,9 +1403,9 @@ File: imagenes/rv.pdf Graphic file (type pdf)
 
 <use imagenes/rv.pdf>
 Package pdftex.def Info: imagenes/rv.pdf used on input line 112.
-(pdftex.def)             Requested size: 400.85599pt x 212.56328pt.
+(pdftex.def)             Requested size: 328.91551pt x 174.41516pt.
 
-Overfull \hbox (83.66014pt too wide) in paragraph at lines 112--112
+Overfull \hbox (11.71967pt too wide) in paragraph at lines 112--112
  [] 
  []
 
@@ -1412,7 +1415,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
                    \relax 
 l.112 \end{frame}
                  
-Overfull \vbox (62.01062pt too high) detected at line 112
+Overfull \vbox (23.8625pt too high) detected at line 112
  []
 
 [10
@@ -1422,9 +1425,9 @@ File: imagenes/qq.pdf Graphic file (type pdf)
 
 <use imagenes/qq.pdf>
 Package pdftex.def Info: imagenes/qq.pdf used on input line 124.
-(pdftex.def)             Requested size: 359.74939pt x 190.76555pt.
+(pdftex.def)             Requested size: 328.91551pt x 174.41516pt.
 
-Overfull \hbox (42.55354pt too wide) in paragraph at lines 124--124
+Overfull \hbox (11.71967pt too wide) in paragraph at lines 124--124
  [] 
  []
 
@@ -1434,7 +1437,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
                    \relax 
 l.124 \end{frame}
                  
-Overfull \vbox (40.21289pt too high) detected at line 124
+Overfull \vbox (23.8625pt too high) detected at line 124
  []
 
 [11
@@ -1465,9 +1468,9 @@ File: imagenes/comp.pdf Graphic file (type pdf)
 
 <use imagenes/comp.pdf>
 Package pdftex.def Info: imagenes/comp.pdf used on input line 238.
-(pdftex.def)             Requested size: 359.74939pt x 190.76555pt.
+(pdftex.def)             Requested size: 349.46098pt x 185.30988pt.
 
-Overfull \hbox (19.05379pt too wide) in paragraph at lines 238--238
+Overfull \hbox (8.76538pt too wide) in paragraph at lines 238--238
  [] 
  []
 
@@ -1477,7 +1480,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
                    \relax 
 l.238 \end{frame}
                  
-Overfull \vbox (31.21289pt too high) detected at line 238
+Overfull \vbox (25.75722pt too high) detected at line 238
  []
 
 [20
@@ -1527,9 +1530,9 @@ Overfull \vbox (47.40683pt too high) detected at line 293
 File: imagenes/norm.pdf Graphic file (type pdf)
  <use imagenes/norm.pdf>
 Package pdftex.def Info: imagenes/norm.pdf used on input line 309.
-(pdftex.def)             Requested size: 380.29485pt x 201.66025pt.
+(pdftex.def)             Requested size: 349.46098pt x 185.30988pt.
 
-Overfull \hbox (39.59924pt too wide) in paragraph at lines 309--309
+Overfull \hbox (8.76538pt too wide) in paragraph at lines 309--309
  [] 
  []
 
@@ -1539,12 +1542,38 @@ pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
                    \relax 
 l.309 \end{frame}
                  
-Overfull \vbox (42.10759pt too high) detected at line 309
+Overfull \vbox (25.75722pt too high) detected at line 309
  []
 
 [26
 
  <./imagenes/norm.pdf>] [27
+
+] [28
+
+]
+<imagenes/corr.pdf, id=248, 1027.84pt x 545.03625pt>
+File: imagenes/corr.pdf Graphic file (type pdf)
+ <use imagenes/corr.pdf>
+Package pdftex.def Info: imagenes/corr.pdf used on input line 332.
+(pdftex.def)             Requested size: 349.46098pt x 185.30988pt.
+
+Overfull \hbox (8.76538pt too wide) in paragraph at lines 332--332
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{figura1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.332 \end{frame}
+                 
+Overfull \vbox (25.75722pt too high) detected at line 332
+ []
+
+[29
+
+ <./imagenes/corr.pdf>] [30
 
 ]
 \tf@nav=\write6
@@ -1556,14 +1585,14 @@ Overfull \vbox (42.10759pt too high) detected at line 309
 \tf@snm=\write8
 \openout8 = `"presentacion tarea5.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 337.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
  ("presentacion tarea5.aux"
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
 Package rerunfilecheck Info: File `"presentacion tarea5".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1574,13 +1603,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 337.
  ) 
 Here is how much of TeX's memory you used:
- 18039 strings out of 493334
- 343405 string characters out of 3139234
+ 18056 strings out of 493334
+ 343605 string characters out of 3139234
  420708 words of memory out of 3000000
- 21073 multiletter control sequences out of 15000+200000
+ 21083 multiletter control sequences out of 15000+200000
  12638 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,55p,907b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1599,9 +1628,9 @@ am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "presentacion tarea5.pdf" (27 pages, 244880 bytes).
+Output written on "presentacion tarea5.pdf" (30 pages, 254653 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

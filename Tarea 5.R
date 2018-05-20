@@ -131,3 +131,34 @@ plot(PM10,PM25,ylab = "PM2.5",xlim=c(0,200),main = "Gráfica de dispersión con re
 abline(modelo1,col="Red")
 abline(modelo2,col="Green")
 legend("topleft",legend = c("Modelo1","Modelo2"),lty=c(1,1),col=c("Red","Green"))
+
+
+#Regresion robusta
+require("MASS")
+require("foreign")
+modelo3<-rlm(PM25~PM10)
+summary(modelo3)
+fitted(modelo3)
+influence.measures(modelo3)
+
+#regresion robusta
+library(MASS)
+RR=lqs(PM25 ~ PM10, method = "lms")
+plot(PM10,PM25,ylab = "PM2.5",xlim=c(0,200),main = "Modelo ajustado")
+text(c(166,95,126,84), c(115,55,19,36), labels=c(1,2,153,93),
+     pos=3, offset=0.3,font=4)
+abline(RR,col="Red")
+summary(RR)
+RR$coefficients
+RR$bestone
+RR$scale
+anova(RR)
+residuosRR=rstandard(RR)
+ajust_valRR=fitted(RR)
+x11()
+plot(ajust_valRR, residuosRR,xlab = "Valores ajustados",ylab = "Residuales Estandarizados")
+text(c(71.688455,3.482043,53.378009,39.187413),c(7.864456259,2.606873687,-5.549881275,2.424057715),  labels=c(1,76,153,2),
+     pos=3, offset=0.3,font=4)
+abline(h=0,col="Red")
+hist(ajust_valRR)
+hist(valores.ajustados)
