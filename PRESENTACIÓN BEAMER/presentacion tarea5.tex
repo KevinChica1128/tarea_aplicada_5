@@ -333,5 +333,56 @@ Observación & HAT & $\hat{r_{i}} $ &$D_{i}$ & $DFFITS_{i}$ & $DFBETAS_{1,j}$ & 
 
 \begin{frame}
 \frametitle{Regresión Robusta}
+~\\Un proceso de regresión robusta es aquel que amortigua el efecto de las observaciones que serían muy influyentes si se usaran los mínimos cuadrados.
+~\\Para aplicar regresión robusta existen varios métodos, entre lo más utilizados están:
+\begin{itemize}
+\item Método M (máxima verosimilitud): Le asigna una función de peso a los residuales, de forma que entre mayor sea el valor del residual menos peso le pone, por ende este método le da menos importancia a valores con residuales grandes.
+\item Método LTS (Cuadrados menos recortados): Intenta minimizar la suma de residuos cuadrados.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Regresión Robusta}
+\begin{itemize}
+\item Método S: Encuentra una línea (plano o hiperplano) que minimiza una estimación robusta de la escala (de la cual el método obtiene la S en su nombre) de los residuos.
+\item Método MM: Intenta retener la solidez y la resistencia de la estimación S, mientras que gana la eficiencia de la estimación M. El método procede al encontrar una estimación S altamente robusta y resistente que minimiza una M-estimación de la escala de los residuos.
+\end{itemize}
+~\\Seleccionamos el método MM para la estimación de los coeficientes por ser el más robusto y el de mejor comportamiento, el modelo ajustado usando este método fue:
+$$\hat{PM_{2.5}}=0.7196+0.3092 PM_{10}$$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Regresión Robusta}
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.34]{imagenes/robusta.pdf}
+  \caption{Gráficos para evaluar la independencia en los errores}\label{figura1}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bondad del modelo}
+~\\Para este modelo ajustado, tenemos los siguientes resultados que nos ayudaran a juzgar que tan bueno es:
+\begin{center}
+~\\\begin{tabular}{|c|c|c|c|c|}
+\hline 
+ & Estimación & Desviación Estandár & Estadistico T & P valor \\ 
+\hline 
+$\beta_{0}$ & 0.7196 & 0.9259 & 0.7771 & 0.4382 \\ 
+\hline 
+$\beta_{1}$ & 0.3092 & 0.0222 & 13.9372 & 0 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+ $\hat{\sigma}$ & Estadistico F & Valor p \\ 
+\hline 
+ 4.824 & 194.2455 & 0 \\ 
+\hline 
+\end{tabular} 
+\end{center}
 \end{frame}
 \end{document}

@@ -136,29 +136,28 @@ legend("topleft",legend = c("Modelo1","Modelo2"),lty=c(1,1),col=c("Red","Green")
 #Regresion robusta
 require("MASS")
 require("foreign")
-modelo3<-rlm(PM25~PM10)
+modelo3<-rlm(PM25~PM10,method="MM") #Método MM
 summary(modelo3)
 fitted(modelo3)
 influence.measures(modelo3)
-
-#regresion robusta
-library(MASS)
-RR=lqs(PM25 ~ PM10, method = "lms")
-plot(PM10,PM25,ylab = "PM2.5",xlim=c(0,200),main = "Modelo ajustado")
+modelo4<-rlm(PM25~PM10,method="M") #Método M
+x11()
+plot(PM10,PM25,main = "Regresión Robusta",xlim=c(0,170))
 text(c(166,95,126,84), c(115,55,19,36), labels=c(1,2,153,93),
      pos=3, offset=0.3,font=4)
-abline(RR,col="Red")
-summary(RR)
-RR$coefficients
-RR$bestone
-RR$scale
-anova(RR)
-residuosRR=rstandard(RR)
-ajust_valRR=fitted(RR)
-x11()
-plot(ajust_valRR, residuosRR,xlab = "Valores ajustados",ylab = "Residuales Estandarizados")
-text(c(71.688455,3.482043,53.378009,39.187413),c(7.864456259,2.606873687,-5.549881275,2.424057715),  labels=c(1,76,153,2),
+abline(modelo3,col="Red",lwd=1.5)
+abline(modelo4,lty=2,col="Green")
+abline(modelo1,lty=2,col="Blue")
+abline(modelo2,lty=2,col="Orange")
+legend("topleft",c("Robusta MM","Robusta M","Modelo MCO","Modelo MCOSI"),lty = c(1,2,2,2),col=c("Red","Green","Blue","Orange"))
+
+
+
+#modelo sin los datos atipicos (93,153,2,1)
+PM10a=PM10[-c(1,2,153,93)]
+PM25a=PM25[-c(1,2,153,93)]
+modelosinr=lm(PM25a ~ PM10a)#regresion sin atipicos
+plot(PM10,PM25,ylab = "PM2.5",xlim=c(0,200),main = "Modelo ajustado (sin atipicos)")
+text(c(166,95,126,84), c(115,55,19,36), labels=c(1,2,153,93),
      pos=3, offset=0.3,font=4)
-abline(h=0,col="Red")
-hist(ajust_valRR)
-hist(valores.ajustados)
+abline(modelosinr,col="Red")

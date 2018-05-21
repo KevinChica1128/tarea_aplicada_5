@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  19 MAY 2018 11:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  20 MAY 2018 22:58
 entering extended mode
 **"./Tarea5 Estadistica Aplicada.tex"
 ("Tarea5 Estadistica Aplicada.tex"
@@ -316,7 +316,29 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks31
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("Tarea5 Estadistica Aplicada.aux")
+("Tarea5 Estadistica Aplicada.aux"
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
+
+LaTeX Warning: Label `figura1' multiply defined.
+
+)
 \openout1 = `"Tarea5 Estadistica Aplicada.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -485,32 +507,39 @@ Package pdftex.def Info: FigurasUV/corr.pdf used on input line 289.
 (pdftex.def)             Requested size: 380.29485pt x 201.66025pt.
 
 [5 <./FigurasUV/norm.pdf> <./FigurasUV/corr.pdf>]
+<FigurasUV/robusta.pdf, id=77, 1027.84pt x 545.03625pt>
+File: FigurasUV/robusta.pdf Graphic file (type pdf)
 
-LaTeX Warning: Citation 'apl' on page 6 undefined on input line 296.
+<use FigurasUV/robusta.pdf>
+Package pdftex.def Info: FigurasUV/robusta.pdf used on input line 300.
+(pdftex.def)             Requested size: 308.35437pt x 163.51213pt.
 
 
-LaTeX Warning: Citation 'Reg' on page 6 undefined on input line 297.
+LaTeX Warning: Citation 'apl' on page 6 undefined on input line 325.
 
 
-LaTeX Warning: Citation 'F' on page 6 undefined on input line 298.
+LaTeX Warning: Citation 'Reg' on page 6 undefined on input line 326.
+
+
+LaTeX Warning: Citation 'F' on page 6 undefined on input line 327.
 
 No file "Tarea5 Estadistica Aplicada".bbl.
-[6] ("Tarea5 Estadistica Aplicada.aux"
+[6 <./FigurasUV/robusta.pdf>] ("Tarea5 Estadistica Aplicada.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5763 strings out of 493334
- 80528 string characters out of 3139234
- 164869 words of memory out of 3000000
- 9168 multiletter control sequences out of 15000+200000
+ 5768 strings out of 493334
+ 80642 string characters out of 3139234
+ 164923 words of memory out of 3000000
+ 9172 multiletter control sequences out of 15000+200000
  19575 words of font info for 58 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 43i,10n,40p,907b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,10n,40p,932b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
 pi600\eccc0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
 ur\jknappen\ec\dpi600\ecti0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2
@@ -535,9 +564,9 @@ pe1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 7.pfb>
-Output written on "Tarea5 Estadistica Aplicada.pdf" (6 pages, 253040 bytes).
+Output written on "Tarea5 Estadistica Aplicada.pdf" (6 pages, 259631 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
+ 465 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

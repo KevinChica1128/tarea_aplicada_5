@@ -292,6 +292,35 @@ Observación & HAT & $\hat{r_{i}} $ &$D_{i}$ & $DFFITS_{i}$ & $DFBETAS_{1,j}$ & $
 
 \pagebreak
 \item[8.] \textbf{Regresión Robusta}
+~\\Las estimaciones con los mínimos cuadrados son altamente sensible a los valores atípicos. Si bien no existe una definición exacta de un valor atípico o de una observación atípica, los valores atípicos son observaciones que no siguen el patrón de las otras observaciones. Esto no es normalmente un problema si el valor atípico es simplemente una observación extrema extraída de la cola de una distribución normal, pero si los resultados atípicos de error de medición no normal o alguna otra violación de supuestos ordinarios de mínimos cuadrados estándar, entonces se compromete la validez de los resultados de la regresión si se utiliza una técnica de regresión no robusta. Un proceso de regresión robusta es aquel que amortigua el efecto de las observaciones que serían muy influyentes si se usaran los mínimos cuadrados. 
+~\\Hay varios métodos para realizar regresión robusta, entre los más utilizados están el método M (máxima verosimilitud) que le asigna una función de peso a los residuales, de forma que entre mayor sea el valor del residual menos peso le pone, por ende este método le da menos importancia a valores con residuales grandes; el método LTS (Cuadrados menos recortados)que intenta minimizar la suma de residuos cuadrados; el método S que encuentra una línea (plano o hiperplano) que minimiza una estimación robusta de la escala (de la cual el método obtiene la S en su nombre) de los residuos y finalmente el método MM que intenta retener la solidez y la resistencia de la estimación S, mientras que gana la eficiencia de la estimación M. El método procede al encontrar una estimación S altamente robusta y resistente que minimiza una M-estimación de la escala de los residuos. 
+~\\Seleccionamos el método MM para la estimación de los coeficientes por ser el más robusto y el de mejor comportamiento, el modelo ajustado usando este método fue: $\hat{PM_{2.5}}=0.7196+0.3092 PM_{10}$
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.3]{FigurasUV/robusta.pdf}
+  \caption{Diagrama de dispersión con todos los modelos ajustados}\label{figura1}
+\end{figure}
+~\\Para este modelo ajustado, tenemos los siguientes resultados que nos ayudaran a juzgar que tan bueno es:
+\begin{center}
+~\\\begin{tabular}{|c|c|c|c|c|}
+\hline 
+ & Estimación & Desviación Estandár & Estadistico T & P valor \\ 
+\hline 
+$\beta_{0}$ & 0.7196 & 0.9259 & 0.7771 & 0.4382 \\ 
+\hline 
+$\beta_{1}$ & 0.3092 & 0.0222 & 13.9372 & 0 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+ $\hat{\sigma}$ & Estadistico F & Valor p \\ 
+\hline 
+ 4.824 & 194.2455 & 0 \\ 
+\hline 
+\end{tabular} 
+\end{center}
 \end{itemize}
 \nocite{apl}
 \nocite{Reg}
