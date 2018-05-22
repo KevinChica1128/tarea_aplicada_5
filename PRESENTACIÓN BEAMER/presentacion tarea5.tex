@@ -255,7 +255,7 @@ $R^2$ & $R^2_{Ajustado}$ & $\hat{\sigma}$ & Estadistico F & Valor p \\
 
 \begin{frame}
 \frametitle{Comparación modelos}
-~\\Seleccionamos como mejor modelo, al segundo, en el cuál se asumió que el intercepto es igual a 0. Se hizo esa elección ya que viendo el $R^2$ y el $R^2_{Ajustado}$, hubo un aumentó bastante grande en ambos (cerca del 0.25) lo cuál es muy bueno, ya que nos dice que la variabilidad del $PM_{2.5}$ explicada por el $PM_{10}$ aumentó en un $25\%$ asumiendo que el intercepto es 0. Además, si nos fijamos en la desviación estándar de la estimación, vemos que se hace más pequeña, lo cuál quiere decir que la precisión de la estimación aumentó y, por último, la prueba de significancia también se rechazo, es decir, $\beta\neq 0$, por lo tanto, el modelo es significativo. Hubo un aumento en la desviación estándar de 0.2, lo cuál no nos pareció una razón de peso para no elegirlo.
+~\\Seleccionamos como mejor modelo, al primero, en el cuál se ajusto con su intercepto, ya que los criterios de selección AIC y BIC dieron menores para este, además, la desviación del modelo a los datos es menor. Nos podría engañar en la selección el $R^2$ y el $R^2_{Ajustado}$, ya que estos aumentan casi en un $25\%$ lo cuál nos podría tentar a elegirlo como el mejor,este aumento ocurre ya que, al no haber intercepto, casi toda la variabilidad de Y ($PM_{2.5}$) es atribuible a X($PM_{10}$) eso explica el $R^2$ de $82\%$. Además, en el modelo sin intercepto $E(\hat{e})$ no es precisamente cero, en este caso esta cerca de -1, lo cuál es inadecuado.
 \end{frame}
 
 \begin{frame}
@@ -281,7 +281,7 @@ Observación & HAT & $\hat{r_{i}} $ &$D_{i}$ & $DFFITS_{i}$ & $DFBETAS_{1,j}$ & 
 \end{frame}
 
 \begin{frame}
-\frametitle{Validación de supuestos, modelo 2}
+\frametitle{Validación de supuestos, modelo con intercepto}
 \begin{itemize}
 \item[a)] Correcta especificación (Linealidad): Para evaluar la correcta especificación del modelo, simplemente nos basamos en las siguientes dos gráficas. 
 \begin{figure}[h]
@@ -293,14 +293,14 @@ Observación & HAT & $\hat{r_{i}} $ &$D_{i}$ & $DFFITS_{i}$ & $DFBETAS_{1,j}$ & 
 \end{frame}
 
 \begin{frame}
-\frametitle{Validación de supuestos, modelo 2}
+\frametitle{Validación de supuestos, modelo con intercepto}
 \begin{itemize}
-\item[b)] Normalidad de los errores: Para verificar este supuesto, se realizaron nuevamente dos gráficas, la primera, un histograma de los residuales para ver una posible forma de distribución de estos, y la segunda, el Q-Qplot, que muestra que tanto se asemeja la distribución de los residuales a la distribución normal. En ambas gráficas se evidencia que la distribución de los residuales no es normal, se puede ver en ambas que la cola derecha de la distribución de los residuales es mucho más pesada que en la distribución normal. Además aplicamos la prueba Shapiro-Wilk para confirmar nuestra creencia, esta prueba nos arrojo un estadistico de $W = 0.77708$ y un p valor= 1.032e-14, por tanto se rechaza $H_{0}$ y se concluye que la distribución de los residuales no es normal.
+\item[b)] Normalidad de los errores: Para verificar este supuesto, se realizaron nuevamente dos gráficas, la primera, un histograma de los residuales para ver una posible forma de distribución de estos, y la segunda, el Q-Qplot, que muestra que tanto se asemeja la distribución de los residuales a la distribución normal. En ambas gráficas se evidencia que la distribución de los residuales no es normal, se puede ver en ambas que la cola derecha de la distribución de los residuales es mucho más pesada que en la distribución normal. Además aplicamos la prueba Shapiro-Wilk para confirmar nuestra creencia, esta prueba nos arrojo un estadístico de $W = 0.85121$ y un p valor= 8.796e-12, por tanto se rechaza $H_{0}$ y se concluye que la distribución de los residuales no es normal.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Validación de supuestos, modelo 2}
+\frametitle{Validación de supuestos, modelo con intercepto}
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.34]{imagenes/norm.pdf}
@@ -309,21 +309,21 @@ Observación & HAT & $\hat{r_{i}} $ &$D_{i}$ & $DFFITS_{i}$ & $DFBETAS_{1,j}$ & 
 \end{frame}
 
 \begin{frame}
-\frametitle{Validación de supuestos, modelo 2}
+\frametitle{Validación de supuestos, modelo con intercepto}
 \begin{itemize}
-\item[c)] Homocedasticidad: Para probar la homocedasticidad, se analiza la misma gráfica realizada en el literal a (los residuales vs los $\hat{y}$ donde se ve que las varianzas son muy parecidas, por lo cual se sospecha que se cumple este supuesto, sin embargo se realizó también la prueba Goldfeld-Quandt, se eligió esta, ya que todas las otras pruebas conocidas (Levene, Barlett, Cochran, Breusch-Pagan, etc) algunas requieren repeticiones en X y otros supuestos, y otras requieren o necesitan el intercepto (es el caso de la prueba de Breusch-Pagan) y este modelo no tiene intercepto. La prueba Goldfeld-Quandt nos arrojo un estadístico de prueba $GQ = 0.44682$ y un p valor de 0.9998. Por lo cuál no se rechaza la hipotesis nula,y concluimos que los residuos del modelo no dan evidencia para decir que tienen heterogeneidad de varianza.
+\item[c)] Homocedasticidad: Para probar la homocedasticidad, se analiza la misma gráfica realizada en el literal a (los residuales vs los $\hat{y}$), donde no se ve claramente el incumplimiento de este supuesto, por lo cual se realizaron las pruebas Goldfeld-Quandt y Breusch-Pagan, se eligieron estas, ya que todas las otras pruebas más conocidas y utilizadas (Levene, Barlett, Cochran, etc) algunas requieren repeticiones en X y otros supuestos. La prueba Goldfeld-Quandt nos arrojo un estadístico de prueba $GQ = 0.6068$ y un p valor de 0.02487, y la prueba Breusch-Pagan nos arrojó un estadístico de prueba $BP = 83.079$ y un p valor asociado de aproximadamente 0 (< 2.2e-16). Por lo cuál en ambas pruebas se rechaza la hipótesis nula,y concluimos que los residuos del modelo no cumplen con el supuesto de homocedasticidad de varianza.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Validación de supuestos, modelo 2}
+\frametitle{Validación de supuestos, modelo con intercepto}
 \begin{itemize}
-\item[d)] Independencia en los errores: Sabemos que no se puede probar a ciencia cierta la independencia en los errores, sin embargo, para tener cierta idea sobre este supuesto, analizamos los residuales gráficamente (correlograma) y le aplicamos la prueba de rachas para darnos cuenta si estos son totalmente aleatorios o si tienen cierta correlación o dependencia. La prueba de rachas nos arrojo un estadístico aproximado a la normal estándar de -2.3369 y un p valor de 0.01945, entonces, para un nivel de significancia de 0.05, se rechaza $H_{0}$ y se concluye que los residuos no son totalmente aleatorios, es decir, hay cierta correlación entre ellos.
+\item[d)] Independencia en los errores: Sabemos que no se puede probar a ciencia cierta la independencia en los errores, sin embargo, para tener cierta idea sobre este supuesto, analizamos los residuales gráficamente (correlograma) y le aplicamos la prueba de Durbin Watson para darnos cuenta si estos tienen cierta correlación o dependencia. La prueba de Durbin-Watson nos arrojo un estadístico $DW = 1.1683$ y un p valor de 2.183e-08, entonces, para un nivel de significancia de 0.05, se rechaza $H_{0}$ y se concluye que la correlación entre los errores es diferente de cero.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Validación de supuestos, modelo 2}
+\frametitle{Validación de supuestos, modelo con intercepto}
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.34]{imagenes/corr.pdf}
@@ -378,9 +378,9 @@ $\beta_{1}$ & 0.3092 & 0.0222 & 13.9372 & 0 \\
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline 
- $\hat{\sigma}$ & Estadistico F & Valor p \\ 
+ $\hat{\sigma}$ & AIC & BIC \\ 
 \hline 
- 4.824 & 194.2455 & 0 \\ 
+ 4.824 & 1147.121 & 1156.493 \\ 
 \hline 
 \end{tabular} 
 \end{center}
@@ -398,10 +398,15 @@ $\beta_{1}$ & 0.3092 & 0.0222 & 13.9372 & 0 \\
  \hline 
  Modelo 2 & 0.8254 & 6.978 & 795.4 & $<2.2e-16$ & 1132.546 & 1138.794 & 0.0129\\ 
  \hline 
- Modelo Robusto &    & 4.824 & 194.2455 & 0 & 1147.121 & 1156.493 & 0.0222 \\
+ Modelo Robusto &    & 4.824 &  &  & 1147.121 & 1156.493 & 0.0222 \\
  \hline 
  \end{tabular}
  }  
-~\\Podemos concluir que el mejor modelo es el (   ), porque (   )
+~\\Podemos concluir que el mejor modelo es el último (Regresión Robusta), ya que, el criterio de comparación entre un modelo MCO y un modelo Robusto es la varianza del modelo, el cambio de los coeficientes de regresión y las desviaciones de esos coeficientes.
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusión}
+~\\Podemos ver que la desviación del modelo disminuyó de 6.7707 a 4.824,los coeficientes estimados cambiaron considerablemente y las desviaciones de las estimaciones también disminuyeron considerablemente. En este caso, no se toma muy en cuenta el AIC y el BIC, ya que estos criterios no tienen en cuenta que en el modelo 1, además de tener puntos atípicos, no se cumplen los supuestos necesarios, por lo que las desviaciones de las estimaciones pueden ser mentirosas, además, cuando la variable de respuesta no está normalmente distribuida, los estimadores por MCO no tienen buenas propiedades, y este es el caso de $PM_{2.5}$ ( no se distribuye de forma normal), y la presencia de puntos atípicos afecta las estimaciones de los coeficientes de regresión y sus desviaciones.
 \end{frame}
 \end{document}
