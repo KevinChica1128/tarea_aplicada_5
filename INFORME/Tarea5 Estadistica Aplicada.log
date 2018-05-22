@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  20 MAY 2018 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  21 MAY 2018 12:03
 entering extended mode
 **"./Tarea5 Estadistica Aplicada.tex"
 ("Tarea5 Estadistica Aplicada.tex"
@@ -317,8 +317,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("Tarea5 Estadistica Aplicada.aux"
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
 
 
 LaTeX Warning: Label `figura1' multiply defined.
@@ -341,18 +341,18 @@ LaTeX Warning: Label `figura1' multiply defined.
 )
 \openout1 = `"Tarea5 Estadistica Aplicada.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 
 (C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -408,8 +408,8 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -447,22 +447,22 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 54.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 53.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 128.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 127.
 
 [1
 
@@ -470,20 +470,20 @@ LaTeX Warning: Characters dropped after `\end{comment}' on input line 128.
 <FigurasUV/ma.pdf, id=19, 1027.84pt x 545.03625pt>
 File: FigurasUV/ma.pdf Graphic file (type pdf)
  <use FigurasUV/ma.pdf>
-Package pdftex.def Info: FigurasUV/ma.pdf used on input line 173.
+Package pdftex.def Info: FigurasUV/ma.pdf used on input line 172.
 (pdftex.def)             Requested size: 400.85599pt x 212.56328pt.
 
 <FigurasUV/rv.pdf, id=20, 1027.84pt x 545.03625pt>
 File: FigurasUV/rv.pdf Graphic file (type pdf)
  <use FigurasUV/rv.pdf>
-Package pdftex.def Info: FigurasUV/rv.pdf used on input line 179.
+Package pdftex.def Info: FigurasUV/rv.pdf used on input line 178.
 (pdftex.def)             Requested size: 400.85599pt x 212.56328pt.
 
 [2 <./FigurasUV/ma.pdf> <./FigurasUV/rv.pdf>]
 <FigurasUV/qq.pdf, id=37, 1027.84pt x 545.03625pt>
 File: FigurasUV/qq.pdf Graphic file (type pdf)
  <use FigurasUV/qq.pdf>
-Package pdftex.def Info: FigurasUV/qq.pdf used on input line 187.
+Package pdftex.def Info: FigurasUV/qq.pdf used on input line 186.
 (pdftex.def)             Requested size: 359.74939pt x 190.76555pt.
 
 [3 <./FigurasUV/qq.pdf>]
@@ -491,19 +491,19 @@ Package pdftex.def Info: FigurasUV/qq.pdf used on input line 187.
 File: FigurasUV/coresp.pdf Graphic file (type pdf)
 
 <use FigurasUV/coresp.pdf>
-Package pdftex.def Info: FigurasUV/coresp.pdf used on input line 274.
+Package pdftex.def Info: FigurasUV/coresp.pdf used on input line 273.
 (pdftex.def)             Requested size: 315.55313pt x 167.32944pt.
  [4 <./FigurasUV/coresp.pdf>]
 <FigurasUV/norm.pdf, id=62, 1027.84pt x 545.03625pt>
 File: FigurasUV/norm.pdf Graphic file (type pdf)
  <use FigurasUV/norm.pdf>
-Package pdftex.def Info: FigurasUV/norm.pdf used on input line 282.
+Package pdftex.def Info: FigurasUV/norm.pdf used on input line 281.
 (pdftex.def)             Requested size: 380.29485pt x 201.66025pt.
 
 <FigurasUV/corr.pdf, id=63, 1027.84pt x 545.03625pt>
 File: FigurasUV/corr.pdf Graphic file (type pdf)
  <use FigurasUV/corr.pdf>
-Package pdftex.def Info: FigurasUV/corr.pdf used on input line 289.
+Package pdftex.def Info: FigurasUV/corr.pdf used on input line 288.
 (pdftex.def)             Requested size: 380.29485pt x 201.66025pt.
 
 [5 <./FigurasUV/norm.pdf> <./FigurasUV/corr.pdf>]
@@ -511,62 +511,58 @@ Package pdftex.def Info: FigurasUV/corr.pdf used on input line 289.
 File: FigurasUV/robusta.pdf Graphic file (type pdf)
 
 <use FigurasUV/robusta.pdf>
-Package pdftex.def Info: FigurasUV/robusta.pdf used on input line 300.
+Package pdftex.def Info: FigurasUV/robusta.pdf used on input line 299.
 (pdftex.def)             Requested size: 308.35437pt x 163.51213pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 327--333
 
-LaTeX Warning: Citation 'apl' on page 6 undefined on input line 325.
+ []
 
-
-LaTeX Warning: Citation 'Reg' on page 6 undefined on input line 326.
-
-
-LaTeX Warning: Citation 'F' on page 6 undefined on input line 327.
-
-No file "Tarea5 Estadistica Aplicada".bbl.
-[6 <./FigurasUV/robusta.pdf>] ("Tarea5 Estadistica Aplicada.aux"
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+("Tarea5 Estadistica Aplicada.bbl" [6 <./FigurasUV/robusta.pdf>]) [7]
+("Tarea5 Estadistica Aplicada.aux"
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
 )
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5768 strings out of 493334
- 80642 string characters out of 3139234
- 164923 words of memory out of 3000000
- 9172 multiletter control sequences out of 15000+200000
- 19575 words of font info for 58 fonts, out of 3000000 for 9000
+ 5809 strings out of 493334
+ 81122 string characters out of 3139234
+ 165430 words of memory out of 3000000
+ 9210 multiletter control sequences out of 15000+200000
+ 20261 words of font info for 59 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  43i,10n,40p,932b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
-pi600\eccc0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\jknappen\ec\dpi600\ecti0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\KEVINSTEVEN\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\KE
-VINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.
+pi600\ecti1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\jknappen\ec\dpi600\eccc0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti0900.pk> <C:\Users\KEVINSTEVEN\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\KE
+VINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.
 pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
-dpi600\ecrm1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk> <C:\Users\KEVINSTEVEN\AppDa
-ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\K
-EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900
+dpi600\ecbx1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
+2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\KEVINSTEVEN\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk> <C:\Users\K
+EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440
 .pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecbx0900.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cm
-ex7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-7.pfb>
-Output written on "Tarea5 Estadistica Aplicada.pdf" (6 pages, 259631 bytes).
+\dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\jknappen\ec\dpi600\ecbx0900.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cmextra/cmex7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy7.pfb>
+Output written on "Tarea5 Estadistica Aplicada.pdf" (7 pages, 282037 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
+ 530 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

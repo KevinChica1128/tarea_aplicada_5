@@ -6,7 +6,7 @@ Base <- read.csv("~/GitHub/tarea_aplicada_5/PM2016.csv", sep=";", stringsAsFacto
 PM10<-Base$PM10
 PM25<-Base$PM25
 modelo1<-lm(PM25 ~ PM10)
-summary(modelo1)$fitted
+summary(modelo1)
 
 x11()
 par(mfrow=c(2,2))
@@ -137,7 +137,7 @@ legend("topleft",legend = c("Modelo1","Modelo2"),lty=c(1,1),col=c("Red","Green")
 require("MASS")
 require("foreign")
 modelo3<-rlm(PM25~PM10,method="MM") #Método MM
-summary(modelo3)
+summary(modelo3)$coefficients
 fitted(modelo3)
 influence.measures(modelo3)
 modelo4<-rlm(PM25~PM10,method="M") #Método M
@@ -161,3 +161,22 @@ plot(PM10,PM25,ylab = "PM2.5",xlim=c(0,200),main = "Modelo ajustado (sin atipico
 text(c(166,95,126,84), c(115,55,19,36), labels=c(1,2,153,93),
      pos=3, offset=0.3,font=4)
 abline(modelosinr,col="Red")
+
+
+
+#R cuadrado de robusta
+PM10d<-(PM10-mean(PM10))
+PM25d<-(PM25-mean(PM25))
+xdtxd<-t(PM10d)%*%PM10d
+xdtyd<-t(PM10d)%*%PM25d
+B1M<-solve(t(PM10d)%*%PM10d)%*%t(PM10d)%*%PM25d
+B1P<-0.3091932
+SCRdM<-t(B1M)%*%t(PM10d)%*%PM25d
+SCRdP<-t(B1P)%*%t(PM10d)%*%PM25d
+SCTd<-t(PM25d)%*%PM25d
+R2M<-SCRdM/SCTd  #R cuadrado modelo 1
+R2P<-SCRdP/SCTd  #R cuadrado robusta
+
+
+AIC(modelo3)
+BIC(modelo3)

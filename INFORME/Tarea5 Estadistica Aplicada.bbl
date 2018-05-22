@@ -1,0 +1,47 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Douglas C.~Montgomery}{2002}{Reg}
+Douglas C.~Montgomery, Elizabeth A.~Peck, G. G.~V.  \harvardyearleft
+  2002\harvardyearright , {\em {Introducción al análisis de regresión lineal}},
+  tercera edn, Compañía Editorial Continental.
+
+\harvarditem{Faraway}{2005}{F}
+Faraway, J.~J.  \harvardyearleft 2005\harvardyearright , {\em Extending the
+  Linear Model with R: Generalized Linear, Mixed Effects and Nonparametric
+  Regression Models}, Vol. 1 edn., Chapman y Hall / CRC.
+
+\harvarditem{Norman R.~Draper}{1998}{apl}
+Norman R.~Draper, H.~S.  \harvardyearleft 1998\harvardyearright , {\em Applied
+  Regression Analysis, Third Edition (Wiley Series in Probability and
+  Statistics)}, third edn.
+\newline\harvardurl{http://gen.lib.rus.ec/book/index.php?md5=903983CE6C8FBCBB1F81265002FE576B}
+
+\harvarditem{{R Core Team}}{2017}{R}
+{R Core Team}  \harvardyearleft 2017\harvardyearright , {\em R: A Language and
+  Environment for Statistical Computing}, R Foundation for Statistical
+  Computing, Vienna, Austria.
+\newline\harvardurl{https://www.R-project.org/}
+
+\harvarditem{{\em Relación entre $PM_{2.5}$ y $PM_{10}$ en la ciudad de
+  Bogotá}}{2005}{PM}
+{\em Relación entre $PM_{2.5}$ y $PM_{10}$ en la ciudad de Bogotá}
+  \harvardyearleft 2005\harvardyearright , {\em Revista de Ingeniería} .
+
+\harvarditem{Tusell}{2011}{Tus}
+Tusell, F.  \harvardyearleft 2011\harvardyearright , {\em Análisis de
+  Regresión.Introducción Teórica y Práctica basada en R}.
+
+\harvarditem{Venables \harvardand\ Ripley}{2002}{robus}
+Venables, W.~N. \harvardand\ Ripley, B.~D.  \harvardyearleft
+  2002\harvardyearright , {\em Modern Applied Statistics with S}, fourth edn,
+  Springer, New York.
+\newblock ISBN 0-387-95457-0.
+\newline\harvardurl{http://www.stats.ox.ac.uk/pub/MASS4}
+
+\harvarditem{Zeileis \harvardand\ Hothorn}{2002}{Lm}
+Zeileis, A. \harvardand\ Hothorn, T.  \harvardyearleft 2002\harvardyearright ,
+  `Diagnostic checking in regression relationships', {\em R News} {\bf
+  2}(3),~7--10.
+\newline\harvardurl{https://CRAN.R-project.org/doc/Rnews/}
+
+\end{thebibliography}

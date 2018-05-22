@@ -7,7 +7,7 @@
 % "\documentclass[english]{revcoles}" o por "\documentclass[portuguese]{revcoles}"
 % **** --------------------------------------------------------------------------------
 \documentclass[report,oneside]{revcoles}
-\usepackage[top=1.5cm,,bottom=1cm,left=0.8cm,right=0.8cm]{geometry}
+\usepackage[top=1.5cm,bottom=1cm,left=0.8cm,right=0.8cm]{geometry}
 \labeldocument[
 university = Universidad del Valle,
 faculty = Facultad de Ingeniería,
@@ -29,7 +29,6 @@ year = 2018]
 % -------------------------------------------------------------------------------------
 % Espacio reservado para colocar las definiciones especiales por parte del autor
 % **** --------------------------------------------------------------------------------
-
 
 
 
@@ -136,7 +135,7 @@ de grado.tex}) and can be used as a guideline just replacing its contents. It is
 ~\\Para entender un poco el objetivo del modelo, se van a definir las dos variables en cuestión:
 ~\\El material particulado respirable presente en la atmósfera de nuestras ciudades en forma sólida o líquida (polvo, cenizas, hollín, partículas metálicas, cemento y polen, entre otras) se puede dividir, según su tamaño, en dos grupos principales. A las de diámetro aerodinámico igual o inferior a los 10 $\mu m$ o 10 micrómetros (1 $\mu m$ corresponde a la milésima parte de un milímetro) se las denomina $PM_{10}$ (partículas respirables) y a la fracción respirable más pequeña, $PM_{2.5}$ (partículas finas). Estas últimas están constituidas por aquellas partículas de diámetro aerodinámico inferior o igual a los 2.5 micrómetros, es decir, son 100 veces más delgadas que un cabello humano, además son más peligrosas, ya que, al ser inhaladas, pueden alcanzar las zonas periféricas de los bronquiolos y alterar el intercambio pulmonar de gases.
 \item[2.] \textbf{Punto 1: Modelo Ajustado}
-~\\Para ajustar un modelo lineal para estas partículas, decidimos que la variable independiente o regresora fuera el $PM_{10}$ y la variable dependiente fuera el $PM_{2.5}$, se hizo esta selección, ya que las partículas con un diámetro menor o igual a 10 micrómetros son más fáciles de medir que las de diámetro menor o igual a 2.5 micrómetros, y la idea es que se ahorren costos y esfuerzo humano adicional, midiendo solo las partículas $PM_{10}$ (que son un poco más grandes) y a partir de ellas logren obtener una buena estimación para las partículas $PM_{2.5}$.
+~\\Para ajustar un modelo lineal para estas partículas, utilizamos el paquete \citeasnoun{Lm} y decidimos que la variable independiente o regresora fuera el $PM_{10}$ y la variable dependiente fuera el $PM_{2.5}$, se hizo esta selección, ya que las partículas con un diámetro menor o igual a 10 micrómetros son más fáciles de medir que las de diámetro menor o igual a 2.5 micrómetros, y la idea es que se ahorren costos y esfuerzo humano adicional, midiendo solo las partículas $PM_{10}$ (que son un poco más grandes) y a partir de ellas logren obtener una buena estimación para las partículas $PM_{2.5}$.
 ~\\Teniendo en cuenta lo anterior, el modelo planteado es:
 $$PM_{2.5}=\beta_{0}+\beta_{1}PM_{10}$$
 ~\\El modelo ajustado, usando MCO es:
@@ -211,7 +210,7 @@ $R^2$ & $R^2_{Ajustado}$ & $\hat{\sigma}$ & Estadistico F & Valor p \\
 \item[-] Si $COVRATIO_{i}>1+3\frac{p}{n}=1.0357$  o si $COVRATIO_{i}<1-3\frac{p}{n}=0.9643$, entonces la i-ésima observación debería ser considerada influyente. 
 \end{itemize}
 \item[4.1] \textbf{Resultados pruebas diagnostico}
-~\\Como se tienen 168 resultados de cada una de las medidas de influencia no se pueden mostrar todas, en la siguiente tabla se mostraran las medidas de los puntos más importantes, las que cumplan con el criterio de influencia se les asignara un asterisco (*) al lado del valor, para así detectar con que criterios es influyente o de balanceo cada punto. \textbf{Tanto en este modelo como en el que pasa por origen (ver tabla del punto 5) todas las observaciones de la tabla son influyentes por uno u otro criterio}.
+~\\Como se tienen 168 resultados de cada una de las medidas de influencia no se pueden mostrar todas, en la siguiente tabla se mostraran las medidas de los puntos más importantes, las que cumplan con el criterio de influencia se les asignara un asterisco (*) al lado del valor, para así detectar con que criterios es influyente o de balanceo cada punto. \textbf{Tanto en este modelo como en el que pasa por origen (ver tabla del punto 5) las observaciones 1 y 153 son claramente influyentes por todos los criterios y el resto resultan influyentes por el COVRATIO, excepto la observación 2, que es solo de balanceo en el primer modelo}.
 
 \begin{center}
 \begin{tabular}{|cccccccc|}
@@ -294,7 +293,7 @@ Observación & HAT & $\hat{r_{i}} $ &$D_{i}$ & $DFFITS_{i}$ & $DFBETAS_{1,j}$ & $
 \item[8.] \textbf{Regresión Robusta}
 ~\\Las estimaciones con los mínimos cuadrados son altamente sensible a los valores atípicos. Si bien no existe una definición exacta de un valor atípico o de una observación atípica, los valores atípicos son observaciones que no siguen el patrón de las otras observaciones. Esto no es normalmente un problema si el valor atípico es simplemente una observación extrema extraída de la cola de una distribución normal, pero si los resultados atípicos de error de medición no normal o alguna otra violación de supuestos ordinarios de mínimos cuadrados estándar, entonces se compromete la validez de los resultados de la regresión si se utiliza una técnica de regresión no robusta. Un proceso de regresión robusta es aquel que amortigua el efecto de las observaciones que serían muy influyentes si se usaran los mínimos cuadrados. 
 ~\\Hay varios métodos para realizar regresión robusta, entre los más utilizados están el método M (máxima verosimilitud) que le asigna una función de peso a los residuales, de forma que entre mayor sea el valor del residual menos peso le pone, por ende este método le da menos importancia a valores con residuales grandes; el método LTS (Cuadrados menos recortados)que intenta minimizar la suma de residuos cuadrados; el método S que encuentra una línea (plano o hiperplano) que minimiza una estimación robusta de la escala (de la cual el método obtiene la S en su nombre) de los residuos y finalmente el método MM que intenta retener la solidez y la resistencia de la estimación S, mientras que gana la eficiencia de la estimación M. El método procede al encontrar una estimación S altamente robusta y resistente que minimiza una M-estimación de la escala de los residuos. 
-~\\Seleccionamos el método MM para la estimación de los coeficientes por ser el más robusto y el de mejor comportamiento, el modelo ajustado usando este método fue: $\hat{PM_{2.5}}=0.7196+0.3092 PM_{10}$
+~\\Seleccionamos el método MM para la estimación de los coeficientes por ser el más robusto y el de mejor comportamiento,utilizando el paquete \citeasnoun{robus}, el modelo ajustado usando este método fue: $\hat{PM_{2.5}}=0.7196+0.3092 PM_{10}$
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.3]{FigurasUV/robusta.pdf}
@@ -321,10 +320,17 @@ $\beta_{1}$ & 0.3092 & 0.0222 & 13.9372 & 0 \\
 \hline 
 \end{tabular} 
 \end{center}
+~\\Podemos concluir que el mejor modelo es el (     ), ya que (    )
 \end{itemize}
-\nocite{apl}
+
+\setlength{\parskip}{1mm}
+~\\\nocite{apl}
 \nocite{Reg}
 \nocite{F}
+\nocite{R}
+\nocite{Tus}
+\nocite{PM}
+
 % //// --------------------------------------------------------------------------------
 % -------------------------------------------------------------------------------------
 % Fin del cuerpo del documento

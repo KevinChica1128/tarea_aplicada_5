@@ -245,9 +245,9 @@ $R^2$ & $R^2_{Ajustado}$ & $\hat{\sigma}$ & Estadistico F & Valor p \\
  \hline 
  Modelos & $R^{2}_{Ajustado}$ & $\hat{\sigma}$ & Estadistico F & Valor P & AIC & BIC & $SD(\beta_{1})$ \\ 
  \hline 
- Modelo 1 & 0.5729 & 6.7707 & 225 & $<2.2e-16$ & 1123.39 & 1132.762 & 0.45776  \\ 
+ Modelo 1 & 0.5729 & 6.7707 & 225 & $<2.2e-16$ & 1123.39 & 1132.762 & 0.03051  \\ 
  \hline 
- Modelo 2 & 0.8254 & 6.978 & 795.4 & $<2.2e-16$ & 1132.546 & 1138.794 & 0.3638\\ 
+ Modelo 2 & 0.8254 & 6.978 & 795.4 & $<2.2e-16$ & 1132.546 & 1138.794 & 0.0129\\ 
  \hline 
  \end{tabular}
  }  
@@ -384,5 +384,24 @@ $\beta_{1}$ & 0.3092 & 0.0222 & 13.9372 & 0 \\
 \hline 
 \end{tabular} 
 \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Comparación de modelos}
+~\\Para comparar los modelos tenemos la siguiente tabla comparativa:
+\resizebox{12.2cm}{!} {
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+ \hline 
+ Modelos & $R^{2}_{Ajustado}$ & $\hat{\sigma}$ & Estadistico F & Valor P & AIC & BIC & $SD(\beta_{1})$ \\ 
+ \hline 
+ Modelo 1 & 0.5729 & 6.7707 & 225 & $<2.2e-16$ & 1123.39 & 1132.762 & 0.03051  \\ 
+ \hline 
+ Modelo 2 & 0.8254 & 6.978 & 795.4 & $<2.2e-16$ & 1132.546 & 1138.794 & 0.0129\\ 
+ \hline 
+ Modelo Robusto &    & 4.824 & 194.2455 & 0 & 1147.121 & 1156.493 & 0.0222 \\
+ \hline 
+ \end{tabular}
+ }  
+~\\Podemos concluir que el mejor modelo es el (   ), porque (   )
 \end{frame}
 \end{document}

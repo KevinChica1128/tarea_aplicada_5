@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  20 MAY 2018 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  21 MAY 2018 10:17
 entering extended mode
 **"./presentacion tarea5.tex"
 ("presentacion tarea5.tex"
@@ -1606,6 +1606,18 @@ Overfull \vbox (25.75722pt too high) detected at line 362
  <./imagenes/robusta.pdf>] [33
 
 ]
+Overfull \hbox (6.42572pt too wide) in paragraph at lines 406--406
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--406
+
+ []
+
+[34
+
+]
 \tf@nav=\write6
 \openout6 = `"presentacion tarea5.nav"'.
 
@@ -1615,14 +1627,14 @@ Overfull \vbox (25.75722pt too high) detected at line 362
 \tf@snm=\write8
 \openout8 = `"presentacion tarea5.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 388.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 388.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
  ("presentacion tarea5.aux"
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 388.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 388.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
 Package rerunfilecheck Info: File `"presentacion tarea5".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1633,13 +1645,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 388.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 407.
  ) 
 Here is how much of TeX's memory you used:
- 18079 strings out of 493334
- 343958 string characters out of 3139234
+ 18083 strings out of 493334
+ 343993 string characters out of 3139234
  420708 words of memory out of 3000000
- 21099 multiletter control sequences out of 15000+200000
+ 21101 multiletter control sequences out of 15000+200000
  12638 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,57p,907b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1658,9 +1670,9 @@ am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "presentacion tarea5.pdf" (33 pages, 265078 bytes).
+Output written on "presentacion tarea5.pdf" (34 pages, 267461 bytes).
 PDF statistics:
- 359 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
  107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
